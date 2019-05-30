@@ -33,7 +33,7 @@ h3 {
 }
 
 #intro {
-  background-color:#ffc300;
+  background-color: #ffc300;
 }
 
 #intro-line-1 {
@@ -57,7 +57,7 @@ img {
 }
 
 a {
-font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif;
   color: #141823;
   text-decoration: underline;
   /* No underlining */
@@ -90,13 +90,13 @@ a:active {
   text-decoration: none;
 }
 
-.button.go-to-top{
+.button.go-to-top {
   background-color: transparent;
   color: #fb6107 !important;
   border: 2px solid #fb6107;
 }
 
-.button.go-to-top:hover{
+.button.go-to-top:hover {
   background-color: transparent;
   color: #ffc300 !important;
   border: 2px solid #ffc300;
@@ -111,7 +111,7 @@ a:active {
 }
 
 #footer {
-  background-color:#fb6107;
+  background-color: #fb6107;
   color: #fefefa;
 }
 
