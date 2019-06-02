@@ -1,8 +1,74 @@
 /*
 Colors used:
-Yellow: #ffc300;
-Orange: #fb6107;
+Yellow - Primary: #ffc300;
+Orange - Primary: #fb6107;
+Blue - visited/unvisited links: 082ed0;
+Dark Yellow - active links: #e6b000;
 */
+* {
+  box-sizing: border-box;
+}
+
+/* Layout styling */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fefefa;
+  text-align: center;
+  padding: 10px 0;
+}
+
+main {
+  padding-top: 211px;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#main-content-section .row {
+  padding-bottom: 25px;
+  border-bottom: 1px;
+}
+
+#hero-section {
+  display: inline-block;
+  width: 100%;
+}
+
+#hero-section h1 {
+  text-align: center;
+}
+
+#footer {
+  background-color: #fb6107;
+  color: #ffffff;
+  text-align: center;
+}
+
+.logo {
+  max-width: 75px;
+}
+
+nav {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
 body {
   background-color: #fefefa;
   font-family: 'Lato', sans-serif;
@@ -12,6 +78,7 @@ body {
   color: #141823;
 }
 
+/* FONTS */
 h1, h2, h3 {
   font-family: 'Nunito', sans-serif;
   line-height: 1.4;
@@ -36,17 +103,21 @@ h3 {
   background-color: #ffc300;
 }
 
-#intro-line-1 {
+#intro p:first-child {
+  margin: 0;
+}
+
+.intro-line-1 {
   font-family: 'Nunito', sans-serif;
-  font-size: 2.441em;
+  font-size: 1.953em;
   font-weight: 700;
   text-align: center;
   margin-bottom: 0px;
 }
 
-#intro-line-2 {
+.intro-line-2 {
   font-family: 'Lato', sans-serif;
-  font-size: 1.953em;
+  font-size: 1.563em;
   font-weight: 400;
   text-align: center;
   margin-top: 0px;
@@ -56,68 +127,48 @@ img {
   width: 100%;
 }
 
+/* LINKS */
 a {
-  font-family: 'Nunito', sans-serif;
-  color: #141823;
+  font-weight: 700;
+  color: #082ed0;
   text-decoration: underline;
-  /* No underlining */
 }
 
 a:visited {
-  /* visited link */
-  color: #141823;
+  color: #082ed0;
 }
 
 a:hover,
 a:focus {
-  color: #42464e;
-  text-decoration: underline;
-  /* Underlining when hovering over a link */
+  color: #ffc300;
 }
 
 a:active {
-  /* selected link */
-  color: #feefe6;
+  color: #e6b000;
 }
 
-.button:hover {
-  background-color: #ffc300;
-  text-decoration: none;
-}
-
-.button:active {
-  background-color: #ffc300;
-  text-decoration: none;
-}
-
-.button.go-to-top {
-  background-color: transparent;
+.a.selected {
   color: #fb6107 !important;
-  border: 2px solid #fb6107;
 }
 
-.button.go-to-top:hover {
-  background-color: transparent;
-  color: #ffc300 !important;
-  border: 2px solid #ffc300;
+nav>ul>li>a {
+  padding: 0 50px;
+  font-family: 'Nunito', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  color: #141823 !important;
+  text-decoration: none;
 }
 
-.button.contact {
-  background-color: #141823;
+nav>ul>li>a:hover,
+nav>ul>li>a:focus {
+  color: #fb6107 !important;
 }
 
-.button.contact:hover {
-  background-color: #ffc300;
-}
-
-#footer {
-  background-color: #fb6107;
-  color: #fefefa;
-}
-
+/* BUTTONS */
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  /* since the <a> tag is inline by default, changed to inline-block */
   background-color: #fb6107;
   color: #ffffff !important;
   /* needed to override the default link color */
@@ -126,4 +177,64 @@ a:active {
   padding: 10px;
   border-radius: 5px;
   transition: 0.2s opacity;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #ffc300;
+  text-decoration: none;
+}
+
+.button.go-to-top {
+  text-align: center;
+  background-color: transparent;
+  color: #fb6107 !important;
+  border: 2px solid #fb6107;
+}
+
+.button.go-to-top:hover,
+.button.go-to-top:focus {
+  color: #ffc300 !important;
+  border: 2px solid #ffc300;
+}
+
+.button.contact {
+  background-color: #141823;
+}
+
+.button.contact:hover,
+.button.contact:focus {
+  background-color: #ffc300 !important;
+}
+
+#main-content-section {
+  padding: 20px 0;
+}
+
+#main-content-section h1 {
+  text-align: center;
+}
+
+#main-content-section-candles h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+#main-content-section-candles img {
+  margin-top: 40px;
+}
+
+#footer {
+  padding: 10px 0;
+  margin-top: 45px;
+}
+
+.social-icon {
+  text-decoration: none;
+  color: #141823 !important;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: #ffc300 !important;
 }
