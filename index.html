@@ -24,8 +24,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,600,600i,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Nunito:400,700&display=swap" rel="stylesheet">
 
   <!-- LINK TO NORMALIZE FILE -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
@@ -41,12 +40,12 @@
 <body>
   <!-- START HEADER SECTION -->
   <header>
-    <div>
+    <div class="container">
       <a href="#">
-        <img src="img/golden_hive_logo.png" alt="Logo Golden Hive writen inside a frame of two hexagons with a bee underneath"></a>
+        <img class="logo" src="img/golden_hive_logo.png" alt="Logo Golden Hive writen inside a frame of two hexagons with a bee underneath"></a>
       <nav>
         <ul>
-          <li><a href="index.html">Products</a></li>
+          <li><a href="#" class="a selected">Products</a></li>
           <li><a href="our_story.html">Our Story</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -60,7 +59,7 @@
 
     <div id="hero-section">
       <!-- START OF HERO SECTION -->
-      <div>
+      <div class="container">
         <!-- START OF CONTENT CONTAINER -->
         <picture>
           <!-- photo -->
@@ -69,10 +68,10 @@
         </picture>
         <div id="intro">
           <!-- background with welcome message on it -->
-          <p id="intro-line-1">
+          <p class="intro-line-1">
             Pure Honey and Bee Products
           </p>
-          <p id="intro-line-2">
+          <p class="intro-line-2">
             We keep our bees, harvest our honey and create natural products.
           </p>
         </div>
@@ -81,10 +80,10 @@
 
     <div id="main-content-section">
       <!-- START OF PRODUCTS SECTION -->
-      <div>
+      <div class="container">
         <!-- START OF CONTENT CONTAINER -->
         <h1>Our Products</h1>
-        <div>
+        <div class="row">
           <!-- open row that holds (2) columns for honey -->
           <div>
             <!-- open first column -->
@@ -102,7 +101,7 @@
             <a href="honey.html" class="button">View Our Types of Honey</a><!-- button or link label -->
           </div><!-- end second column -->
         </div><!-- end row that holds (2) columns for honey -->
-        <div>
+        <div class="row">
           <!-- open row that holds (2) columns for propolis -->
           <div>
             <!-- open first column -->
@@ -120,7 +119,7 @@
             <a href="propolis.html" class="button">Learn More</a><!-- button or link label -->
           </div><!-- end second column -->
         </div><!-- end row that holds (2) columns for propolis -->
-        <div>
+        <div class="row">
           <!-- open row that holds (2) columns for beeswax and candles -->
           <div>
             <!-- open first column -->
@@ -152,7 +151,7 @@
 
   <!-- START FOOTER SECTION -->
   <footer id="footer">
-  <div id="contact">
+  <div id="contact" class="container">
     <h2>Get in Touch</h2>
     <p>
       Would you like to learn more about our products or interested to buy? Please get in touch. Call: <a href="tel:+491234567">+49 1234567</a>
@@ -165,9 +164,9 @@
     </div>
     <div>
       <!-- INSTAGRAM -->
-      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-instagram fa-2x social-icon"></a>
       <!-- FACEBOOK -->
-      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-facebook fa-2x social-icon"></a>
     </div>
     <p>© Copyright Olga Lefter</p>
   </div>
