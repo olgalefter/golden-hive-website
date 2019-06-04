@@ -200,6 +200,7 @@ nav>ul>li>a:focus {
 
 .button.contact {
   background-color: #141823;
+  margin-bottom: 15px;
 }
 
 .button.contact:hover,
@@ -232,6 +233,7 @@ nav>ul>li>a:focus {
 .social-icon {
   text-decoration: none;
   color: #141823 !important;
+  padding: 15px;
 }
 
 .social-icon:hover,
