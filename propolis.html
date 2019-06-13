@@ -40,12 +40,21 @@
 <body class="propolis">
   <!-- START HEADER SECTION -->
   <header>
-    <div class="container">
+    <div class="header-container">
       <a href="index.html">
         <img class="logo" src="img/golden_hive_logo.png" alt="Logo Golden Hive writen inside a frame of two hexagons with a bee underneath"></a>
       <nav>
         <ul>
-          <li><a href="index.html">Products</a></li>
+          <div class="dropdown">
+            <li><a href="index.html" class="droplink">Products
+                <i class="fa fa-caret-down"></i>
+              </a></li>
+            <div class="dropdown-content">
+              <a href="honey.html">Honey</a>
+              <a href="propolis.html" class="selected">Propolis</a>
+              <a href="beeswax_and_candles.html">Beeswax and Candles</a>
+            </div>
+          </div>
           <li><a href="our_story.html">Our Story</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -70,14 +79,14 @@
         <!-- START OF CONTENT CONTAINER -->
         <div class="row">
           <!-- open row that holds (2) columns for propolis -->
-          <div class="column col-lg-4">
+          <div class="column">
             <!-- open first column -->
             <picture>
               <source srcset="img/cover_propolis_2_sm.jpg" media="(max-width:767px)">
               <img src="img/cover_propolis_2_lg.jpg" alt="Scoop filled with raw propolis on wooden table">
             </picture>
           </div><!-- end first column -->
-          <div class="column col-lg-8">
+          <div class="column">
             <!-- open second column -->
             <p>Thousands of years ago, ancient civilizations used propolis for its medicinal properties. Greeks used it to treat abscesses. Assyrians put it on wounds and tumors to fight infection and help the healing process. Egyptians used it to
               embalm mummies.
