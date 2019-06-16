@@ -2,7 +2,6 @@
 Colors used:
 Yellow - Primary: #ffc300;
 Orange - Primary: #fb6107;
-Dark Yellow - active links: #e6b000;
 */
 body {
   background-color: #f6f6f6;
@@ -41,7 +40,7 @@ h3 {
 /* LINKS */
 a {
   font-weight: 700;
-  color: #000000;
+  color: #141823;
   text-decoration: underline;
   transition: 0.2s color;
 }
@@ -49,14 +48,6 @@ a {
 a:hover,
 a:focus {
   color: #ffc300;
-}
-
-a:active {
-  color: #e6b000;
-}
-
-.selected {
-  color: #fb6107 !important;
 }
 
 /* BUTTONS */
@@ -99,45 +90,68 @@ header {
   padding: 10px 0;
 }
 
-nav {
-  display: inline-block;
-  width: 100%;
-}
-
-nav>ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
-}
-
-nav>ul>li>a,
-.dropdown .droplink {
-  padding: 0 3px;
-  font-family: 'Nunito', sans-serif;
-  text-transform: uppercase;
-  font-size: 0.9em;
-  color: #141823;
-  text-decoration: none;
-}
-
-nav>ul>li>a:hover,
-nav>ul>li>a:focus,
-.dropdown .droplink:hover,
-.dropdown .droplink:focus {
-  color: #fb6107 !important;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: left;
+/* ------------------------------------------------------------------------ */
+/* Add a black background color to the top navigation */
+.topnav {
   overflow: hidden;
 }
 
-/* Dropdown content (hidden by default) */
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  padding: 5px 10px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  color: #141823;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  color: #fb6107 !important;
+  background-color: #ffffff;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.fa.fa-bars {
+  font-size: 36px;
+  color: #fb6107;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+
+.dropdown .dropbtn {
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  color: #141823;
+  padding: 5px 10px;
+  font-weight: inherit;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.fa.fa-caret-down {
+  padding-left: 5px;
+}
+
+/* Style the dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -147,31 +161,83 @@ nav>ul>li>a:focus,
   z-index: 1;
 }
 
-/* Links inside the dropdown */
+/* Style the links inside the dropdown */
 .dropdown-content a {
   float: none;
   font-family: 'Nunito', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 0.9em;
-  padding: 12px 16px;
+  padding: 5px 10px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
 
-/* Add a background color to dropdown links on hover */
-.dropdown-content a:hover {
-  color: #000;
-  background-color: #ffc300;
+/* Add color to topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  color: #fb6107;
 }
 
-/* Show the dropdown menu on hover */
+/* Add a background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ffc300;
+  color: #141823;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-.logo {
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 767px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 767px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* ------------------------------------------------------------------------- */
+
+.logo img {
   max-width: 75px;
 }
 
@@ -385,21 +451,6 @@ figcaption {
 }
 
 @media only screen and (min-width: 768px) {
-  header {
-    text-align: unset;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 27px;
-  }
-
-  nav>ul>li>a,
-  .dropdown .droplink {
-    padding: 0 15px;
-    font-size: 1em;
-  }
 
   .logo {
     margin-left: 15px;

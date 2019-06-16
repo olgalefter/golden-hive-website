@@ -41,24 +41,23 @@
   <!-- START HEADER SECTION -->
   <header>
     <div class="header-container">
-      <a href="#">
-        <img class="logo" src="img/golden_hive_logo.png" alt="Logo Golden Hive writen inside a frame of two hexagons with a bee underneath"></a>
-      <nav>
-        <ul>
-          <div class="dropdown">
-            <li><a href="#" class="droplink selected">Products
-                <i class="fa fa-caret-down"></i>
-              </a></li>
-            <div class="dropdown-content">
-              <a href="honey.html">Honey</a>
-              <a href="propolis.html">Propolis</a>
-              <a href="beeswax_and_candles.html">Beeswax and Candles</a>
-            </div>
+      <div class="topnav" id="myTopnav">
+        <a href="#" class="logo">
+          <img src="img/golden_hive_logo.png" alt="Logo Golden Hive writen inside a frame of two hexagons with a bee underneath"></a>
+        <div class="dropdown">
+          <button class="dropbtn active">
+            Products<i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="honey.html">Honey</a>
+            <a href="propolis.html">Propolis</a>
+            <a href="beeswax_and_candles.html">Beeswax and Candles</a>
           </div>
-          <li><a href="our_story.html">Our Story</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        </div>
+        <a href="our_story.html">Our Story</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+      </div>
     </div>
   </header>
   <!-- END HEADER SECTION -->
@@ -77,7 +76,7 @@
         </picture>
         <div id="intro">
           <!-- background with welcome message on it -->
-          <h1>Pure Honey and Bee Products<span>We keep our bees, harvest our honey and create natural products.</span></h1>
+          <h1>Pure Honey and Bee Products<span>We keep our bees, harvest honey and create natural bee products.</span></h1>
         </div>
       </div><!-- END OF CONTENT CONTAINER -->
     </div><!-- END OF HERO SECTION -->
