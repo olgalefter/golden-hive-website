@@ -26,6 +26,8 @@
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Nunito:400,700&display=swap" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
   <!-- LINK TO NORMALIZE FILE -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
@@ -40,26 +42,27 @@
 <body class="our_story">
   <!-- START HEADER SECTION -->
   <header>
-    <div class="header-container">
+    <div id="logo" class="menuUp header-container">
       <a href="index.html">
         <img class="logo" src="img/golden_hive_logo.png" alt="Logo Golden Hive writen inside a frame of two hexagons with a bee underneath"></a>
-      <nav>
-        <ul>
-          <div class="dropdown">
-            <li><a href="index.html" class="droplink">Products
-                <i class="fa fa-caret-down"></i>
-              </a></li>
-            <div class="dropdown-content">
-              <a href="honey.html">Honey</a>
-              <a href="propolis.html">Propolis</a>
-              <a href="beeswax_and_candles.html">Beeswax and Candles</a>
-            </div>
-          </div>
-          <li><a href="#" class="selected">Our Story</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div id="navToggle"><a href="#"><i class="fa fa-bars"></i></a></div>
     </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Products <span class="toggle">Expand</span><span class="caret"></span></a>
+          <nav>
+            <ul>
+              <li><a href="honey.html">Honey</a></li>
+              <li><a href="propolis.html">Propolis</a></li>
+              <li><a href="beeswax_and_candles.html">Beeswax and Candles</a></li>
+            </ul>
+          </nav>
+        </li>
+        <li><a href="our_story.html" class="selected">Our Story</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
   <!-- END HEADER SECTION -->
 
@@ -200,10 +203,6 @@
   </footer>
   <!-- END FOOTER SECTION -->
 
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 
 </body>
