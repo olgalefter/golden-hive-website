@@ -150,8 +150,7 @@ header>nav>ul>li>nav {
   background-color: #f6f6f6;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   display: none;
-  position: absolute;
-  min-width: 200px;
+  max-width: 230px;
   z-index: 1;
 }
 
@@ -412,6 +411,11 @@ figcaption {
 }
 
 @media only screen and (min-width: 768px) {
+
+  header {
+    flex-direction: row;
+  }
+
   header>div#logo {
     margin-left: 15px;
   }
@@ -456,6 +460,8 @@ figcaption {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
+    padding: 0;
+    margin-top: 25px;
   }
 
   header nav>ul>li>a {
@@ -465,6 +471,7 @@ figcaption {
   header>nav>ul>li:hover>nav {
     background-color: #f6f6f6;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
     display: block;
     line-height: 3em;
   }
@@ -599,6 +606,7 @@ main {
 }
 
 @media only screen and (min-width: 1024px) {
+
   .header-container {
     max-width: 1164px;
     margin: 0 auto;
