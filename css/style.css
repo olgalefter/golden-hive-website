@@ -421,6 +421,7 @@ figcaption {
 
   header {
     flex-direction: row;
+    width: 100%;
   }
 
   header>div#logo {
@@ -594,11 +595,6 @@ main {
 }
 
 @media only screen and (min-width: 1024px) {
-
-  .header-container {
-    max-width: 1164px;
-    margin: 0 auto;
-  }
 
   #hero-section {
     max-width: 1164px;
