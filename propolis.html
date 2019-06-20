@@ -41,27 +41,27 @@
   <!-- START HEADER SECTION -->
   <header>
     <div class="topnav header-container" id="topnav">
-  <a href="index.html" class="logo">
-    <img src="img/golden_hive_logo.png" alt="Logo Golden Hive writen inside a frame of two hexagons with a bee underneath">
-  </a>
-  <div class="navlinks">
-    <div class="dropdown" onClick="toggleDropdown()">
-      <button class="dropbtn">
-        Products<i class="fa fa-caret-down"></i>
-      </button>
-      <div class="dropdown-content">
-        <a href="honey.html">Honey</a>
-        <a href="propolis.html" class="active">Propolis</a>
-        <a href="beeswax_and_candles.html">Beeswax and Candles</a>
+      <a href="index.html" class="logo">
+        <img src="img/golden_hive_logo.png" alt="Logo Golden Hive writen inside a frame of two hexagons with a bee underneath">
+      </a>
+      <div class="navlinks">
+        <div class="dropdown" onClick="toggleDropdown()">
+          <button class="dropbtn">
+            Products<i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="honey.html">Honey</a>
+            <a href="propolis.html" class="active">Propolis</a>
+            <a href="beeswax_and_candles.html">Beeswax and Candles</a>
+          </div>
+        </div>
+        <a href="our_story.html">Our Story</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleTopnav()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </div>
-    <a href="our_story.html">Our Story</a>
-    <a href="#contact">Contact</a>
-    <a href="javascript:void(0);" class="icon" onclick="toggleTopnav()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
   </header>
   <!-- END HEADER SECTION -->
 
@@ -81,27 +81,34 @@
         <!-- START OF CONTENT CONTAINER -->
         <div class="row">
           <!-- open row that holds (2) columns for propolis -->
-          <div class="column">
+          <div class="column col-md-4 col-lg-4">
             <!-- open first column -->
             <picture>
               <source srcset="img/cover_propolis_2_sm.jpg" media="(max-width:767px)">
               <img src="img/cover_propolis_2_lg.jpg" alt="Scoop filled with raw propolis on wooden table">
             </picture>
           </div><!-- end first column -->
-          <div class="column">
+          <div class="column col-md-8 col-lg-8">
             <!-- open second column -->
-            <p>Thousands of years ago, ancient civilizations used propolis for its medicinal properties. Greeks used it to treat abscesses. Assyrians put it on wounds and tumors to fight infection and help the healing process. Egyptians used it to
+            <p>
+              Thousands of years ago, ancient civilizations used propolis for its medicinal properties. Greeks used it to treat abscesses. Assyrians put it on wounds and tumors to fight infection and help the healing process. Egyptians used it to
               embalm mummies.
-              Propolis is thought to have antibacterial, antiviral, anti-fungal, and anti-inflammatory properties.</p>
-            <p>These are some specific and studied ways that bee propolis can be utilized:
-              Common Cold and Sore Throat - 500 milligrams one to two times per day.
-              Cold Sores - Apply propolis ointment to the cold sore four times per day.
-              Genital Herpes - Apply a 3 percent propolis ointment to the lesions four times per day.
-              Female Infertility and Endometriosis - 500 milligrams two times per day.
-              Yeast Infection - Apply an alcohol extract containing 2 grams per 25 milliliters four times per day.
-              Rheumatoid Arthritis - Apply a topical product according to package directions.
-              Parasites - Consult a qualified healthcare practitioner on product and dosing.</p>
-            <p>We have available raw propolis ready to be used for natural remedies.</p>
+              Propolis has antibacterial, antiviral, anti-fungal, and anti-inflammatory properties.
+            </p>
+            <p>
+              These are some specific and studied ways that bee propolis can be utilized:
+            </p>
+            <ul>
+              <li>Common Cold and Sore Throat - 500 milligrams one to two times per day. </li>
+              <li>Cold Sores - Apply propolis ointment to the cold sore four times per day. </li>
+              <li>Female Infertility and Endometriosis - 500 milligrams two times per day.</li>
+              <li>Yeast Infection - Apply an alcohol extract containing 2 grams per 25 milliliters four times per day.</li>
+              <li>Rheumatoid Arthritis - Apply a topical product according to package directions.</li>
+              <li>Parasites - Consult a qualified healthcare practitioner on product and dosing.</li>
+            </ul>
+            <p>
+              We have available raw propolis ready to be used for natural remedies.
+            </p>
           </div><!-- end second column -->
         </div><!-- end row that holds (2) columns for propolis -->
 
@@ -136,10 +143,7 @@
   </footer>
   <!-- END FOOTER SECTION -->
 
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 
 </body>
