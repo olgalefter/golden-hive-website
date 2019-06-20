@@ -17,3 +17,12 @@ function toggleDropdown() {
     dropdownContent.classList.add("responsive");
   }
 }
+
+
+
+// if ($(window).width() > 768) {
+//    alert('Less than 960');
+// }
+// else {
+//    alert('More than 960');
+// }
