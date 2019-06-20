@@ -13,7 +13,7 @@ body {
 }
 
 /* FONTS */
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: 'Nunito', sans-serif;
   line-height: 1.4;
 }
@@ -31,6 +31,14 @@ h2 {
 h3 {
   font-size: 1.25em;
   font-weight: 700;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 700;
+  color: #e15706;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 * {
@@ -129,7 +137,6 @@ header {
   float: left;
   overflow: hidden;
   font-family: 'Nunito', sans-serif;
-  font-size: 0.9em;
   font-weight: 700;
 }
 
@@ -139,8 +146,9 @@ header {
   border: none;
   outline: none;
   color: #141823;
-  padding: 5px 20px;
   font-weight: inherit;
+  font-size: 0.9em;
+  padding: 5px 10px 5px 20px;
   line-height: 1.6;
   text-transform: uppercase;
 }
@@ -172,16 +180,7 @@ header {
   text-align: left;
 }
 
-/* Add color to topnav links and the dropdown button on hover */
-.topnav a:hover, .dropdown:hover .dropbtn {
-  color: #fb6107;
-}
 
-/* Add a background to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ffc300;
-  color: #141823;
-}
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 767px) {
@@ -359,6 +358,11 @@ figcaption {
 .honey h2 {
   text-align: center;
   margin-top: 0;
+}
+
+.honey #main-content-section p {
+  margin-top: 0px;
+  margin-bottom: 15px;
 }
 
 .social-icon {
@@ -551,11 +555,6 @@ figcaption {
     margin: 0 auto;
   }
 
-  .honey #main-content-section p {
-    max-width: 650px;
-    margin: 0 auto;
-  }
-
   .honey #main-content-section img {
     margin-bottom: 10px;
   }
@@ -584,6 +583,22 @@ figcaption {
   .header-container {
     max-width: 1164px;
     margin: 0 auto;
+  }
+
+  .honey .header-container, .propolis .header-container, .candles .header-container   {
+    max-width: 958px;
+    margin: 0 auto;
+  }
+
+  /* Add color to topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    color: #fb6107;
+  }
+
+  /* Add a background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ffc300;
+    color: #141823;
   }
 
   #hero-section {
