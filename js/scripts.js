@@ -17,12 +17,3 @@ function toggleDropdown() {
     dropdownContent.classList.add("responsive");
   }
 }
-//
-// function toggleDropdown() {
-//   var dropdownContent = document.getElementsByClassName("dropdown-content")[0];
-//   if(dropdownContent.style.display == "none") {
-//     dropdownContent.style.display = "block";
-//   } else {
-//     dropdownContent.style.display = "none";
-//   }
-// }

@@ -40,25 +40,28 @@
 <body class="our_story">
   <!-- START HEADER SECTION -->
   <header>
-    <div class="header-container">
-      <div class="topnav" id="myTopnav">
-        <a href="index.html" class="logo">
-          <img src="img/golden_hive_logo.png" alt="Logo Golden Hive writen inside a frame of two hexagons with a bee underneath"></a>
-        <div class="dropdown">
-          <button class="dropbtn">
-            Products<i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="honey.html">Honey</a>
-            <a href="propolis.html">Propolis</a>
-            <a href="beeswax_and_candles.html">Beeswax and Candles</a>
-          </div>
-        </div>
-        <a href="our_story.html" class="active">Our Story</a>
-        <a href="#contact">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    <div class="topnav header-container" id="topnav">
+  <a href="index.html" class="logo">
+    <img src="img/golden_hive_logo.png" alt="Logo Golden Hive writen inside a frame of two hexagons with a bee underneath">
+  </a>
+  <div class="navlinks">
+    <div class="dropdown" onClick="toggleDropdown()">
+      <button class="dropbtn">
+        Products<i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="honey.html">Honey</a>
+        <a href="propolis.html">Propolis</a>
+        <a href="beeswax_and_candles.html">Beeswax and Candles</a>
       </div>
     </div>
+    <a href="our_story.html" class="active">Our Story</a>
+    <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleTopnav()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
   </header>
   <!-- END HEADER SECTION -->
 

@@ -40,26 +40,28 @@
 <body class="propolis">
   <!-- START HEADER SECTION -->
   <header>
-    <div class="header-container">
-      <a href="index.html">
-        <img class="logo" src="img/golden_hive_logo.png" alt="Logo Golden Hive writen inside a frame of two hexagons with a bee underneath"></a>
-      <nav>
-        <ul>
-          <div class="dropdown">
-            <li><a href="index.html" class="droplink">Products
-                <i class="fa fa-caret-down"></i>
-              </a></li>
-            <div class="dropdown-content">
-              <a href="honey.html">Honey</a>
-              <a href="propolis.html" class="selected">Propolis</a>
-              <a href="beeswax_and_candles.html">Beeswax and Candles</a>
-            </div>
-          </div>
-          <li><a href="our_story.html">Our Story</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+    <div class="topnav header-container" id="topnav">
+  <a href="index.html" class="logo">
+    <img src="img/golden_hive_logo.png" alt="Logo Golden Hive writen inside a frame of two hexagons with a bee underneath">
+  </a>
+  <div class="navlinks">
+    <div class="dropdown" onClick="toggleDropdown()">
+      <button class="dropbtn">
+        Products<i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="honey.html">Honey</a>
+        <a href="propolis.html" class="active">Propolis</a>
+        <a href="beeswax_and_candles.html">Beeswax and Candles</a>
+      </div>
     </div>
+    <a href="our_story.html">Our Story</a>
+    <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="toggleTopnav()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
   </header>
   <!-- END HEADER SECTION -->
 
