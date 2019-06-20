@@ -93,19 +93,20 @@ header {
   text-align: left;
 }
 
-/* ------------------------------------------------------------------------ */
-/* Add a black background color to the top navigation */
-.topnav {
-  overflow: hidden;
+.logo {
+  padding: 0 !important;
 }
+
+/* ------------------------------------------------------------------------ */
 
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   display: block;
-  padding: 5px 10px;
+  padding: 5px 10px 5px 20px;
   font-family: 'Nunito', sans-serif;
-  font-size: 0.9em;
+  font-size: 0.9em !important;
+  font-weight: 700;
   text-transform: uppercase;
   color: #141823;
   padding: 10px 0;
@@ -126,8 +127,9 @@ header {
 }
 
 .fa.fa-bars {
-  font-size: 36px;
+  font-size: 32px;
   color: #fb6107;
+  margin-top: 15px;
 }
 
 /* Dropdown container - needed to position the dropdown content */
@@ -146,7 +148,7 @@ header {
   border: none;
   outline: none;
   color: #141823;
-  padding: 5px 10px;
+  padding: 5px 20px;
   font-weight: inherit;
   line-height: 1.6;
   text-transform: uppercase;
@@ -174,7 +176,7 @@ header {
   font-weight: 400;
   text-transform: uppercase;
   font-size: 0.9em;
-  padding: 5px 10px;
+  padding: 5px 20px;
   text-decoration: none;
   display: block;
   text-align: left;
@@ -196,19 +198,11 @@ header>nav>ul {
   color: #141823;
 }
 
-/* Show the dropdown menu when the user moves the mouse over the dropdown button */
-.dropdown:hover .dropdown-content {
-  display: block;
-  right: 0;
-  top: 0;
-  transition: 0.3s all ease;
-}
-
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 767px) {
+
   .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-  }
+      display: none;}
 
   .topnav a.icon {
     float: right;
@@ -247,12 +241,16 @@ header>nav>ul {
     width: 100%;
     text-align: left;
   }
+
+  .dropdown-content.responsive {
+    display: block;
+  }
 }
 
 /* ------------------------------------------------------------------------- */
-
-.logo img {
+#topnav img {
   max-width: 75px;
+  margin-left: 10px;
 }
 
 main {
@@ -465,47 +463,17 @@ figcaption {
 }
 
 @media only screen and (min-width: 768px) {
-
-  header nav>ul>li>a span.toggle {
-    display: none;
+  .navlinks {
+    float: right;
+    padding-top: 25px;
   }
 
-  header nav>ul>li:hover>a span.caret {
-    transform: rotate(270deg);
-    border-top: 4px solid #fb6107;
-  }
-
-  header>nav {
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
     display: block;
   }
 
-  header>nav>ul {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
-    padding: 0;
-    margin-top: 25px;
-  }
-
-  header nav>ul>li>a {
-    padding: 0 20px;
-  }
-
-  header>nav>ul>li:hover>nav {
-    background-color: #f6f6f6;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    display: block;
-    line-height: 3em;
-  }
-
-  header>nav>ul>li>nav>ul {
-    padding: 0;}
-
-    header>nav>ul>li>nav {
-      min-width: 240px;}
-
-main {
+  main {
     padding-top: 102px;
   }
 
@@ -629,6 +597,11 @@ main {
 }
 
 @media only screen and (min-width: 1024px) {
+
+  .header-container {
+    max-width: 1164px;
+    margin: 0 auto;
+  }
 
   #hero-section {
     max-width: 1164px;

@@ -42,12 +42,14 @@
 
 <body class="home">
   <!-- START HEADER SECTION -->
+
   <header>
-    <div class="header-container">
-      <div class="topnav" id="myTopnav">
+      <div class="topnav header-container" id="topnav">
         <a href="#" class="logo">
-          <img src="img/golden_hive_logo.png" alt="Logo Golden Hive writen inside a frame of two hexagons with a bee underneath"></a>
-        <div class="dropdown">
+          <img src="img/golden_hive_logo.png" alt="Logo Golden Hive writen inside a frame of two hexagons with a bee underneath">
+        </a>
+        <div class="navlinks">
+        <div class="dropdown" onClick="toggleDropdown()">
           <button class="dropbtn active">
             Products<i class="fa fa-caret-down"></i>
           </button>
@@ -59,7 +61,9 @@
         </div>
         <a href="our_story.html">Our Story</a>
         <a href="#contact">Contact</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleTopnav()">
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </div>
   </header>
