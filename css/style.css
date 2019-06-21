@@ -13,7 +13,10 @@ body {
 }
 
 /* FONTS */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Nunito', sans-serif;
   line-height: 1.4;
 }
@@ -61,10 +64,8 @@ a:focus {
 /* BUTTONS */
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, changed to inline-block */
   background-color: #fb6107;
-  color: #ffffff !important;
-  /* needed to override the default link color */
+  color: #fff !important;
   text-decoration: none;
   font-weight: 600;
   padding: 10px;
@@ -94,7 +95,7 @@ header {
   z-index: 99999;
   top: 0;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 10px 0;
 }
 
@@ -142,7 +143,7 @@ header {
 
 /* Style the dropdown button to fit inside the topnav */
 .dropdown .dropbtn {
-  background-color: #ffffff;
+  background-color: #fff;
   border: none;
   outline: none;
   color: #141823;
@@ -163,7 +164,7 @@ header {
   position: absolute;
   background-color: #f6f6f6;
   min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -180,17 +181,18 @@ header {
   text-align: left;
 }
 
-
-
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 767px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
+
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
     display: none;
   }
 
   .topnav a.icon {
     float: right;
     display: block;
+    padding: 0 10px 12px 20px;
   }
 }
 
@@ -250,7 +252,7 @@ main {
 
 footer {
   background-color: #fb6107;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   padding: 10px 0;
 }
@@ -263,7 +265,7 @@ img {
 figcaption {
   font-size: 0.8em;
   background: #ffc300;
-  padding: 10px 10px;
+  padding: 10px;
   line-height: 1.6;
   text-align: center;
 }
@@ -283,7 +285,7 @@ figcaption {
   margin: -7px auto 0;
   width: 100%;
   text-align: center;
-  padding: 35px 15px;
+  padding: 10px 15px;
 }
 
 #main-content-section {
@@ -309,7 +311,7 @@ figcaption {
 
 .home h1 {
   font-size: 1.563em;
-  margin: 0px;
+  margin: 0;
 }
 
 .home h1 span {
@@ -346,7 +348,7 @@ figcaption {
 }
 
 .our_story figure {
-  margin: 0;
+  margin: 10px 0 0 0;
   line-height: 0;
 }
 
@@ -361,7 +363,7 @@ figcaption {
 }
 
 .honey #main-content-section p {
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 15px;
 }
 
@@ -476,6 +478,7 @@ figcaption {
   #intro {
     margin: -90px auto 0;
     width: 90%;
+    padding: 35px 15px;
   }
 
   [class*="col-"] {
@@ -560,6 +563,7 @@ figcaption {
 
   .our_story figure {
     min-height: 300px;
+    margin: 0;
   }
 
   .our_story_txt {
@@ -598,7 +602,8 @@ figcaption {
   }
 
   /* Add color to topnav links and the dropdown button on hover */
-  .topnav a:hover, .dropdown:hover .dropbtn {
+  .topnav a:hover,
+  .dropdown:hover .dropbtn {
     color: #fb6107;
   }
 
@@ -673,7 +678,7 @@ figcaption {
 
   .our_story figure {
     min-height: 375px;
-}
+  }
 
   .honey #hero-section p {
     max-width: 958px;
