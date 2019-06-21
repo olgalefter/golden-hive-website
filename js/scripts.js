@@ -10,6 +10,9 @@ function toggleTopnav() {
 }
 
 function toggleDropdown() {
+  if(window.matchMedia("(min-width: 768px)").matches) {
+    window.location.href = "index.html"
+  }
   var dropdownContent = document.getElementsByClassName("dropdown-content")[0];
   if (dropdownContent.classList.contains("responsive")) {
     dropdownContent.classList.remove("responsive");
@@ -17,6 +20,8 @@ function toggleDropdown() {
     dropdownContent.classList.add("responsive");
   }
 }
+
+
 
 
 
