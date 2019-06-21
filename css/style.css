@@ -263,9 +263,9 @@ img {
 figcaption {
   font-size: 0.8em;
   background: #ffc300;
-  height: 66px;
   padding: 10px 10px;
   line-height: 1.6;
+  text-align: center;
 }
 
 #hero-container {
@@ -346,7 +346,7 @@ figcaption {
 }
 
 .our_story figure {
-  margin: 0 0 40px 0;
+  margin: 0;
   line-height: 0;
 }
 
@@ -558,6 +558,10 @@ figcaption {
     margin-bottom: 0;
   }
 
+  .our_story figure {
+    min-height: 300px;
+  }
+
   .our_story_txt {
     max-width: 670px;
     margin: 0 auto;
@@ -590,11 +594,6 @@ figcaption {
 @media only screen and (min-width: 1024px) {
   .header-container {
     max-width: 1164px;
-    margin: 0 auto;
-  }
-
-  .honey .header-container, .propolis .header-container, .candles .header-container   {
-    max-width: 958px;
     margin: 0 auto;
   }
 
@@ -673,8 +672,8 @@ figcaption {
   }
 
   .our_story figure {
-    min-height: 270px;
-  }
+    min-height: 375px;
+}
 
   .honey #hero-section p {
     max-width: 958px;
