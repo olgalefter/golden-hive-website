@@ -37,7 +37,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1em;
+  font-size: 1.05em;
   font-weight: 700;
   color: #e15706;
   margin-top: 0;
@@ -67,6 +67,8 @@ a:focus {
   background-color: #fb6107;
   color: #fff !important;
   text-decoration: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1em;
   font-weight: 700;
   padding: 10px;
   border-radius: 5px;
@@ -109,6 +111,7 @@ header {
   display: block;
   padding: 12px 10px 12px 20px;
   font-family: 'Nunito', sans-serif;
+  font-size: 1.05em;
   font-weight: 700;
   text-transform: uppercase;
   color: #141823;
@@ -146,6 +149,7 @@ header {
   border: none;
   outline: none;
   color: #141823;
+  font-size: 1.05em;
   font-weight: inherit;
   padding: 12px 10px 12px 20px;
   line-height: 1.6;
@@ -252,6 +256,10 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px 0;
+}
+
+footer p {
+  font-size: 1.35em;
 }
 
 img {
