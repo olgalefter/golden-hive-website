@@ -463,7 +463,8 @@ figcaption {
   }
 
   /* Show the dropdown menu when the user moves the mouse over the dropdown button */
-  .dropdown:hover .dropdown-content {
+  .dropdown:hover .dropdown-content,
+  .dropdown:focus .dropdown-content {
     display: block;
   }
 
@@ -607,12 +608,15 @@ figcaption {
 
   /* Add color to topnav links and the dropdown button on hover */
   .topnav a:hover,
-  .dropdown:hover .dropbtn {
+  .topnav a:focus,
+  .dropdown:hover .dropbtn,
+  .dropdown:focus .dropbtn{
     color: #fb6107;
   }
 
   /* Add a background to dropdown links on hover */
-  .dropdown-content a:hover {
+  .dropdown-content a:hover,
+  .dropdown-content a:focus {
     background-color: #ffc300;
     color: #141823;
   }
